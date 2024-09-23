@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* FONTS */
+  h1 {
+    @apply font-inter text-4xl lg:text-5xl xl:text-6xl font-semibold leading-normal; /* 4rem */
+  }
+  h2 {
+    @apply font-inter text-3xl lg:text-4xl xl:text-5xl font-semibold leading-normal; /* 3rem */
+  }
+
+  h3 {
+    @apply font-inter text-xl font-semibold; /* 1.5rem */
+  }
+  p {
+    @apply font-inter text-base font-normal; /* 1.125rem */
+  }
+
+  /* BUTTONS */
+  .btn_primary {
+    @apply rounded-md py-4 px-6 text-lightBlue bg-white border-2 border-solid border-white transition-all  text-center text-base font-inter font-normal leading-normal flex items-center justify-center hover:bg-transparent hover:text-white;
+  }
+  .btn_secondary {
+    @apply rounded-md py-4 px-6 text-white border-2 border-solid border-white transition-all  text-center text-base font-inter font-normal leading-normal flex items-center justify-center hover:bg-white  hover:text-lightBlue;
+  }
+
+  .btn_black {
+    @apply rounded-md py-4 px-6 font-inter bg-black text-white transition-all hover:bg-white hover:text-black  text-center text-base font-normal;
+  }
+
+  /* SECTIONS */
+  header {
+    @apply w-full !max-w-[100%];
+  }
+  .full_wrapper {
+    @apply flex items-center justify-center flex-wrap h-[auto] w-full overflow-clip;
+  }
+  .container-width-48 {
+    width: 48%;
+  }
+  .container-width-45 {
+    width: 45%;
+  }
+  @media (max-width: 800px) {
+    .container-width-45 {
+      width: 100%;
+    }
+    .container-width-48 {
+      width: 100%;
+    }
+  }
+  .hero {
+    @apply w-full flex justify-center items-center flex-wrap relative min-h-[45rem] md:min-h-[50rem] xl:min-h-[60rem];
+  }
+}
+@layer utilities {
+  /* UTILITIES */
+  .responsive_container {
+    @apply max-w-[90vw] xl:max-w-[85vw] 3xl:max-w-[80vw]  4xl:max-w-[75vw];
+  }
+  .responsive_container_large {
+    @apply max-w-[90vw] xl:max-w-[88.33vw] 3xl:max-w-[85.33vw]  4xl:max-w-[90.33vw];
+  }
+  .mobile_nav {
+    @apply w-full items-start bg-dark-gray gap-y-5 px-[3rem] pt-[4rem] lg:pt-[5rem] xl:top-0 sm:top-20 overflow-hidden;
+  }
+  .responsive_container_navbar {
+    @apply max-w-[95vw] xl:max-w-[85vw] 3xl:max-w-[80vw] 4xl:max-w-[75vw];
+  }
+  .responsive_container_center {
+    @apply max-w-[90vw] xl:max-w-[70vw] 3xl:max-w-[65vw] 4xl:max-w-[55vw];
+  }
+}
