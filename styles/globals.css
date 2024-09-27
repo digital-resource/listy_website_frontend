@@ -7,7 +7,7 @@
 @layer base {
   /* FONTS */
   h1 {
-    @apply font-inter text-4xl lg:text-5xl xl:text-6xl font-semibold leading-normal; /* 4rem */
+    @apply font-inter text-5xl lg:text-6xl xl:text-[4rem] font-semibold leading-normal; /* 4rem */
   }
   h2 {
     @apply font-inter text-3xl lg:text-4xl xl:text-5xl font-semibold leading-normal; /* 3rem */
@@ -22,15 +22,18 @@
 
   /* BUTTONS */
   .btn_primary {
-    @apply rounded-md py-4 px-6 text-lightBlue bg-white border-2 border-solid border-white transition-all  text-center text-base font-inter font-normal leading-normal flex items-center justify-center hover:bg-transparent hover:text-white;
+    @apply rounded-xl py-4 px-6 text-lightBlue bg-white border-2 border-solid border-white transition-all text-center text-base font-inter font-semibold leading-normal flex items-center justify-center hover:bg-transparent hover:text-white;
   }
   .btn_secondary {
-    @apply rounded-md py-4 px-6 text-white border-2 border-solid border-white transition-all  text-center text-base font-inter font-normal leading-normal flex items-center justify-center hover:bg-white  hover:text-lightBlue;
+    @apply rounded-xl py-4 px-6 text-white border-2 border-solid border-white transition-all  text-center text-base font-inter font-semibold leading-normal flex items-center justify-center hover:bg-white  hover:text-lightBlue;
+  }
+  .btn_black {
+    @apply rounded-xl py-4 px-6 font-inter bg-black text-white transition-all hover:bg-white hover:text-black  text-center text-base font-normal;
+  }
+  .btn_navbar {
+    @apply rounded-xl py-4 px-6 text-white transition-all  text-center text-base font-inter font-normal leading-normal flex items-center justify-center hover:bg-white  hover:text-lightBlue;
   }
 
-  .btn_black {
-    @apply rounded-md py-4 px-6 font-inter bg-black text-white transition-all hover:bg-white hover:text-black  text-center text-base font-normal;
-  }
 
   /* SECTIONS */
   header {
@@ -54,7 +57,13 @@
     }
   }
   .hero {
-    @apply w-full flex justify-center items-center flex-wrap relative min-h-[45rem] md:min-h-[50rem] xl:min-h-[60rem];
+    @apply w-full flex justify-center items-center flex-wrap py-10 relative min-h-[45rem] xl:min-h-[50rem];
+  }
+  .navbar{
+    @apply w-full flex justify-between flex-row items-center text-white h-auto;
+  }
+  .dropDown{
+    @apply p-0 font-inter bg-transparent font-normal text-small;
   }
 }
 @layer utilities {
