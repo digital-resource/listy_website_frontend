@@ -24,6 +24,8 @@ module.exports = {
       backgroundImage: {
         hero: "url('/images/hero.webp')",
         form_gradient: 'rgba(255, 255, 255, 0.90);',
+        video1: "url('/images/video1.webp')",
+        video2: "url('/images/video2.webp')",
       },
       boxShadow: {
         cardShadow: '0px 15px 24px 0px rgba(0, 0, 0, 0.07)',

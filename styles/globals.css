@@ -34,7 +34,6 @@
     @apply rounded-xl py-4 px-6 text-white transition-all  text-center text-base font-inter font-normal leading-normal flex items-center justify-center hover:bg-white  hover:text-lightBlue;
   }
 
-
   /* SECTIONS */
   header {
     @apply w-full !max-w-[100%];
@@ -59,11 +58,17 @@
   .hero {
     @apply w-full flex justify-center items-center flex-wrap py-10 relative min-h-[45rem] xl:min-h-[50rem];
   }
-  .navbar{
+  .navbar {
     @apply w-full flex justify-between flex-row items-center text-white h-auto;
   }
-  .dropDown{
+  .dropDown {
     @apply p-0 font-inter bg-transparent font-normal text-small;
+  }
+  .whychooselisty {
+    @apply w-full flex justify-center text-white;
+  }
+  .black_whychooselist {
+    @apply flex flex-wrap bg-black py-16;
   }
 }
 @layer utilities {
@@ -81,6 +86,6 @@
     @apply max-w-[95vw] xl:max-w-[85vw] 3xl:max-w-[80vw] 4xl:max-w-[75vw];
   }
   .responsive_container_center {
-    @apply max-w-[90vw] xl:max-w-[70vw] 3xl:max-w-[65vw] 4xl:max-w-[55vw];
+    @apply max-w-[90vw] xl:max-w-[75vw] 3xl:max-w-[65vw] 4xl:max-w-[55vw];
   }
 }

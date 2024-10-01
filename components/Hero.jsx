@@ -7,11 +7,11 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section className='hero bg-lightBlue top-0'>
+    <section className='hero bg-lightBlue top-0 overflow-hidden'>
       <Navbar bgColor='bg-lightBlue' />
       <Container customStyle='flex flex-wrap justify-between items-center responsive_container text-white'>
         <div className='flex flex-col w-1/2 gap-y-10 '>
-          <h1 className='leading-[120%]'s>Vorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+          <h1 className='leading-[120%]'>Vorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
           <p className='w-3/4 text-xl font-light'>
             Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie, dictum est a, mattis tellus.
@@ -27,10 +27,10 @@ const Hero = () => {
               </CustomButton>
             </Link>
           </div>
-          <div className='w-[60%] flex flex-row gap-x-10'>
+          <div className='w-1/2 flex flex-row gap-x-5'>
             <Image src={Follow} />
             <Link href='#' className='hover:text-black transition-all'>
-              <p className='text-base font-light'>FIND OUT WHAT PEOPLE SAY ABOUT US</p>
+              <p className='text-base font-light'>FIND OUT WHAT<br/> PEOPLE SAY ABOUT US</p>
             </Link>
           </div>
         </div>
