@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { LuArrowRight } from 'react-icons/lu'
 
 const CardService = ({ icon, title, content, link }) => {
   return (
@@ -10,8 +11,12 @@ const CardService = ({ icon, title, content, link }) => {
       <div className='flex flex-col gap-2 w-3/5'>
         <h3 className='text-lightBlue'>{title}</h3>
         <p>{content}</p>
-        <Link href={link} className='font-semibold capitalize'>
+        <Link
+          href={link}
+          className='flex flex-row items-center gap-x-2 font-semibold capitalize transition-all hover:text-lightBlue'
+        >
           learn more
+          <LuArrowRight className='text-lg font-semibold' />
         </Link>
       </div>
     </div>

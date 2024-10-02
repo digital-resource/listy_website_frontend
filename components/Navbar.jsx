@@ -1,4 +1,5 @@
 'use client'
+import { useState, useEffect } from 'react'
 import { IoIosArrowDropdown } from 'react-icons/io'
 import {
   Navbar,
@@ -22,13 +23,30 @@ import CustomButton from './CustomButton'
 import Container from './Container'
 
 const CustomMenu = ({ bgColor }) => {
+  const [isSticky, setSticky] = useState(false)
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 300)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+  console.log('isSticky', isSticky)
   return (
-    <section className='navbar'>
+    <section
+      className={`${
+        isSticky
+          ? 'fixed py-7 top-0 left-0 w-full z-50 bg-lightBlue shadow-lg'
+          : 'relative'
+      } transition-all duration-300 ease-in-out navbar`}
+    >
       <Container customStyle='flex justify-between bg-transparent responsive_container'>
         <Navbar className={`${bgColor} text-white px-0`}>
           <NavbarBrand>
             <Link href='/'>
-              <Image src={Logo} className='w-[15rem]'/>
+              <Image src={Logo} className='w-[15rem]' />
             </Link>
           </NavbarBrand>
           <NavbarContent className='hidden sm:flex gap-5' justify='center'>

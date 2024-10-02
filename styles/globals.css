@@ -70,6 +70,7 @@
   .black_whychooselist {
     @apply flex flex-wrap bg-black py-16;
   }
+  
 }
 @layer utilities {
   /* UTILITIES */
@@ -88,4 +89,5 @@
   .responsive_container_center {
     @apply max-w-[90vw] xl:max-w-[75vw] 3xl:max-w-[65vw] 4xl:max-w-[55vw];
   }
+  
 }

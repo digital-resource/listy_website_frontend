@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section className='hero bg-lightBlue top-0 overflow-hidden'>
+    <section className='hero relative bg-lightBlue top-0 overflow-hidden'>
       <Navbar bgColor='bg-lightBlue' />
       <Container customStyle='flex flex-wrap justify-between items-center responsive_container text-white'>
         <div className='flex flex-col w-1/2 gap-y-10 '>
@@ -20,7 +20,9 @@ const Hero = () => {
           </p>
           <div className='w-full flex justify-start flex-wrap gap-x-10'>
             <Link href='#'>
-              <CustomButton className='btn_primary'>Talk to an Expert</CustomButton>
+              <CustomButton className='btn_primary'>
+                Talk to an Expert
+              </CustomButton>
             </Link>
 
             <Link href='#'>

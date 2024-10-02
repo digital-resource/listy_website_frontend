@@ -3,6 +3,8 @@ import Container from './Container'
 import Link from 'next/link'
 import Image from 'next/image'
 import PlayImage from '@/public/images/play.webp'
+import { LuArrowRight } from "react-icons/lu";
+
 
 const WhyChooseListy = () => {
   return (
@@ -30,10 +32,11 @@ const WhyChooseListy = () => {
           </p>
           <Link
             href='#'
-            className='rounded-xl transition-all text-left text-base font-inter font-normal leading-normal hover:text-lightBlue'
+            className='flex flex-row items-center gap-x-2 rounded-xl text-left text-base font-inter font-normal leading-normal transition-all hover:text-lightBlue'
           >
             Learn More
-          </Link>
+            <LuArrowRight className='text-lg font-semibold'/>
+            </Link>
           <CustomButton className='btn_secondary'>
             Start a Free Trial
           </CustomButton>

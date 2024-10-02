@@ -1,6 +1,5 @@
 import CustomButton from './CustomButton'
 import Container from './Container'
-import Link from 'next/link'
 import Image from 'next/image'
 import CardService from './CardService'
 import Card1 from '@/public/images/card1.webp'
@@ -77,7 +76,7 @@ const DiscoverSolution = () => {
             />
           </div>
         </div>
-        <div className='w-full flex justify-between gap-32'>
+        <div className='w-full flex justify-between gap-28'>
           {Cards.map((card, index) => (
             <CardService
               key={index}
