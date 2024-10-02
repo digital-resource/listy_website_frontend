@@ -11,14 +11,16 @@ const Hero = () => {
       <Navbar bgColor='bg-lightBlue' />
       <Container customStyle='flex flex-wrap justify-between items-center responsive_container text-white'>
         <div className='flex flex-col w-1/2 gap-y-10 '>
-          <h1 className='leading-[120%]'>Vorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+          <h1 className='leading-[110%]'>
+            Vorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h1>
           <p className='w-3/4 text-xl font-light'>
             Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie, dictum est a, mattis tellus.
           </p>
           <div className='w-full flex justify-start flex-wrap gap-x-10'>
             <Link href='#'>
-              <CustomButton>Talk to an Expert</CustomButton>
+              <CustomButton className='btn_primary'>Talk to an Expert</CustomButton>
             </Link>
 
             <Link href='#'>
@@ -30,7 +32,10 @@ const Hero = () => {
           <div className='w-1/2 flex flex-row gap-x-5'>
             <Image src={Follow} />
             <Link href='#' className='hover:text-black transition-all'>
-              <p className='text-base font-light'>FIND OUT WHAT<br/> PEOPLE SAY ABOUT US</p>
+              <p className='text-base font-light'>
+                FIND OUT WHAT
+                <br /> PEOPLE SAY ABOUT US
+              </p>
             </Link>
           </div>
         </div>

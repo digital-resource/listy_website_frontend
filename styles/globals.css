@@ -10,7 +10,7 @@
     @apply font-inter text-5xl lg:text-6xl xl:text-[4rem] font-semibold leading-normal; /* 4rem */
   }
   h2 {
-    @apply font-inter text-3xl lg:text-4xl xl:text-5xl font-semibold leading-normal; /* 3rem */
+    @apply font-inter text-3xl lg:text-4xl xl:text-5xl font-semibold leading-normal capitalize; /* 3rem */
   }
 
   h3 {
@@ -22,7 +22,7 @@
 
   /* BUTTONS */
   .btn_primary {
-    @apply rounded-xl py-4 px-6 text-lightBlue bg-white border-2 border-solid border-white transition-all text-center text-base font-inter font-semibold leading-normal flex items-center justify-center hover:bg-transparent hover:text-white;
+    @apply rounded-xl py-4 px-6 text-lightBlue bg-white border-2 border-solid border-white transition-all text-center text-base font-inter font-semibold leading-normal flex items-center justify-center hover:border-black hover:bg-black hover:text-lightBlue;
   }
   .btn_secondary {
     @apply rounded-xl py-4 px-6 text-white border-2 border-solid border-white transition-all  text-center text-base font-inter font-semibold leading-normal flex items-center justify-center hover:bg-white  hover:text-lightBlue;
