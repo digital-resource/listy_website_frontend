@@ -7,7 +7,7 @@ const ConatctHome = () => {
   return (
     <div className='w-full pb-24'>
       <Container customStyle='flex min-h-[32rem] justify-end rounded-xl responsive_container bg-home_contact bg-cover bg-no-repeat bg-center'>
-        <div className='w-full flex flex-col xl:w-1/2 p-20 bg-white_blur gap-y-7 justify-center'>
+        <div className='w-full flex flex-col md:w-1/2 p-10 xl:p-20 bg-white_blur gap-y-7 justify-center'>
           <h2 className='font-normal capitalize'>Sign into your account</h2>
           <div className='flex flex-col gap-y-6 max-w-[28rem]'>
             <div className='flex flex-col gap-y-5'>
