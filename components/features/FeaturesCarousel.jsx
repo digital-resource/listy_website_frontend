@@ -64,7 +64,7 @@ const FeaturesCarousel = () => {
             partialVisibilityGutter: 30,
           },
           mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 640, min: 0 },
             items: 1,
             partialVisibilityGutter: 20,
           },

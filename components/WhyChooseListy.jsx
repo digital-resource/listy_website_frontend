@@ -9,12 +9,12 @@ import { LuArrowRight } from "react-icons/lu";
 const WhyChooseListy = () => {
   return (
     <section className='whychooselisty py-24'>
-      <Container customStyle='flex flex-wrap justify-between bg-black p-24 rounded-[2.69rem] min-h-[35rem] responsive_container'>
+      <Container customStyle='flex flex-wrap justify-between bg-black p-12 xl:p-24 rounded-[2.69rem] min-h-[35rem] gap-y-10 responsive_container'>
         <div className='flex flex-col items-start container-width-45 gap-y-10'>
           <h2>
             Why Choose <span className='text-lightBlue'>Listy</span>
           </h2>
-          <div className='w-full flex flex-row gap-x-7'>
+          <div className='w-full flex flex-wrap gap-7 justify-center'>
             <div className='w-[12rem] h-[12rem] flex flex-col gap-y-2 text-center rounded-full p-10 items-center justify-center border-solid border-1 border-white'>
               <h2 className='text-lightBlue'>+123</h2>
               <p>Satisfied <br/>Customers</p>

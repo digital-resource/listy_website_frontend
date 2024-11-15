@@ -9,8 +9,8 @@ const Hero = () => {
   return (
     <section className='hero relative bg-lightBlue top-0 overflow-hidden'>
       <Navbar bgColor='bg-lightBlue' />
-      <Container customStyle='flex flex-wrap justify-between items-center responsive_container text-white'>
-        <div className='flex flex-col w-1/2 gap-y-10 '>
+      <Container customStyle='flex flex-wrap justify-between items-center responsive_container text-white pt-16 lg:pt-10'>
+        <div className='flex flex-col w-full xl:w-1/2 gap-y-10 '>
           <h1 className='leading-[110%]'>
             Vorem ipsum dolor sit amet, consectetur adipiscing elit.
           </h1>
@@ -18,7 +18,7 @@ const Hero = () => {
             Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie, dictum est a, mattis tellus.
           </p>
-          <div className='w-full flex justify-start flex-wrap gap-x-10'>
+          <div className='w-full flex justify-stretch xl:justify-start flex-wrap gap-5 xl:gap-x-10'>
             <Link href='#'>
               <CustomButton className='btn_primary'>
                 Talk to an Expert
@@ -31,7 +31,7 @@ const Hero = () => {
               </CustomButton>
             </Link>
           </div>
-          <div className='w-1/2 flex flex-row gap-x-5'>
+          <div className='w-full xl:w-1/2 flex flex-row gap-x-5'>
             <Image src={Follow} />
             <Link href='#' className='hover:text-black transition-all'>
               <p className='text-base font-light'>
@@ -41,7 +41,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className='flex w-3/5 absolute right-0 bottom-[-5rem] bg-hero bg-cover bg-no-repeat bg-center min-h-[40rem]'></div>
+        <div className='w-full flex xl:w-3/5 xl:absolute right-0 bottom-[-20rem] xl:bottom-[-5rem] bg-hero bg-contain xl:bg-cover bg-no-repeat bg-center min-h-[20rem] lg:min-h-[30rem] xl:min-h-[40rem]'></div>
       </Container>
     </section>
   )

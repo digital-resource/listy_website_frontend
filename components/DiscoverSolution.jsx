@@ -34,8 +34,8 @@ import StreeView from '@/public/images/street_1.webp'
 const DiscoverSolution = () => {
   return (
     <section className='w-full py-24'>
-      <Container customStyle='flex responsive_container flex-col gap-y-10'>
-        <div className='w-3/5 flex m-auto flex-col justify-center gap-y-16 text-center text-black capitalize leading-[2rem]'>
+      <Container customStyle='flex responsive_container flex-col gap-y-5 xl:gap-y-10'>
+        <div className='w-full lg:w-3/5 flex m-auto flex-col justify-center gap-y-16 text-center text-black capitalize leading-[2rem]'>
           <h2 className='leading-[120%]'>
             Discover Listy's tailored <br />
             <span className='text-lightBlue'>real estate solutions</span>
@@ -48,7 +48,7 @@ const DiscoverSolution = () => {
           </p>
         </div>
         <FeaturesCarousel />
-        <div className='w-full flex flex-row justify-center gap-x-10 mb-16'>
+        <div className='w-full flex flex-wrap justify-center gap-5 xl:gap-x-10 mb-16'>
           <CustomButton className='btn_secondary min-w-[16rem] border-none bg-lightBlue hover:bg-black hover:text-white'>
             Talk to an Expert
           </CustomButton>
@@ -57,8 +57,8 @@ const DiscoverSolution = () => {
             Explore all Listy packages
           </CustomButton>
         </div>
-        <div className='w-full flex flex-wrap justify-between items-center mb-16'>
-          <div className='flex flex-col items-start w-2/5 text-black gap-y-10'>
+        <div className='w-full flex flex-wrap justify-between gap-10 items-center mb-16'>
+          <div className='flex flex-col items-start w-full lg:w-2/5 text-black gap-y-10'>
             <h2 className='leading-[120%]'>
               This is how we <br />
               <span className='text-lightBlue'>can help you</span>
@@ -69,14 +69,14 @@ const DiscoverSolution = () => {
               ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <div className='flex  w-2/5'>
+          <div className='flex w-full lg:w-2/5'>
             <Image
               src={StreeView}
               className='w-full min-h-[15rem] rounded-xl'
             />
           </div>
         </div>
-        <div className='w-full flex justify-between gap-28'>
+        <div className='w-full flex flex-col lg:flex-row justify-between gap-10 xl:gap-28'>
           {Cards.map((card, index) => (
             <CardService
               key={index}
@@ -84,6 +84,7 @@ const DiscoverSolution = () => {
               title={card.title}
               content={card.content}
               link={card.link}
+              
             />
           ))}
         </div>
