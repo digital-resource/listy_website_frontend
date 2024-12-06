@@ -16,18 +16,18 @@ const Faqs = () => {
   return (
     <section className='w-full py-24'>
       <Container customStyle='flex flex-wrap gap-y-10 xl:py-20 p-12 xl:px-24 rounded-[2.69rem] justify-between text-white bg-faq_gradient min-h-[25rem] responsive_container'>
-        <div className='w-full lg:w-2/5 flex flex-col gap-y-7 items-start'>
-          <h2 className=''>
+        <div className='w-full lg:w-2/5 flex flex-col gap-y-7 items-start text-center lg:text-left'>
+          <h2 className='m-auto lg:ml-0'>
             <span className='text-lightBlue'>Frequently</span> Asked Questions
           </h2>
-          <div>
-            <p className='mb-3'>Can’t Find What You’re Looking for?</p>
+          <div className="m-auto lg:ml-0">
+            <p className='mb-3 text-center lg:text-left'>Can’t Find What You’re Looking for?</p>
             <Link href='#' className='text-lightBlue font-medium hover:text-white'>
               Contact Us ! We’ll Answer Your Questions
             </Link>
           </div>
 
-          <CustomButton className='btn_secondary bg-lightBlue border-none hover:bg-white hover:text-black'>
+          <CustomButton className='btn_secondary bg-lightBlue border-none hover:bg-white hover:text-black m-auto lg:ml-0'>
             Talk to an Expert
           </CustomButton>
         </div>
