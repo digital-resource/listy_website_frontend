@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
             <p>
               Designed by{' '}
-              <Link href='#' className='hover:text-black'>
+              <Link href='https://www.yourdigitalresource.com/' target="_blank" className='hover:text-black'>
                 Digital Resource
               </Link>
             </p>

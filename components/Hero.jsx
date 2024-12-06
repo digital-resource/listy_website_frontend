@@ -5,10 +5,11 @@ import Image from 'next/image'
 import Follow from '@/public/images/follow.webp'
 import Link from 'next/link'
 
+
 const Hero = () => {
   return (
     <section className='hero relative bg-lightBlue top-0 overflow-hidden'>
-      <Navbar bgColor='bg-lightBlue' />
+      <Navbar bgColor='bg-lightBlue' textColor='text-white' isHome />
       <Container customStyle='flex flex-wrap justify-between items-center responsive_container text-white'>
         <div className='flex flex-col w-1/2 gap-y-10 '>
           <h1 className='leading-[110%]'>
