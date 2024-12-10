@@ -58,12 +58,12 @@ const DiscoverSolution = () => {
           </CustomButton>
         </div>
         <div className='w-full flex flex-wrap justify-between gap-10 items-center mb-16'>
-          <div className='flex flex-col items-start w-full lg:w-2/5 text-black gap-y-10'>
-            <h2 className='leading-[120%]'>
+          <div className='flex flex-col items-center lg:items-start w-full lg:w-2/5 text-black gap-y-10 '>
+            <h2 className='leading-[120%] text-center'>
               This is how we <br />
               <span className='text-lightBlue'>can help you</span>
             </h2>
-            <p>
+            <p className="text-center lg:text-left">
               Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis.Jorem
               ipsum dolor sit amet, consectetur adipiscing elit.
