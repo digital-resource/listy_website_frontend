@@ -1,4 +1,4 @@
-import Navbar from '@/components/navbar'
+import Navbar from '@/components/Navbar'
 import {Divider} from '@nextui-org/react'
 import Faqs from '@/components/Faqs'
 import Footer from '@/components/Footer'
