@@ -14,7 +14,7 @@ const WhyChooseListy = () => {
           <h2>
             Why Choose <span className='text-lightBlue'>Listy</span>
           </h2>
-          <div className='w-full flex flex-wrap gap-7 justify-center'>
+          <div className='w-full flex flex-wrap gap-7 justify-center text-center'>
             <div className='w-[12rem] h-[12rem] flex flex-col gap-y-2 text-center rounded-full p-10 items-center justify-center border-solid border-1 border-white'>
               <h2 className='text-lightBlue'>+123</h2>
               <p>Satisfied <br/>Customers</p>
@@ -24,7 +24,7 @@ const WhyChooseListy = () => {
               <p>Sold <br/>Houses</p>
             </div>
           </div>
-          <p>
+          <p className="text-center md:text-left">
             Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie, dictum est a, mattis tellus. Forem ipsum dolor sit
             amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
@@ -32,12 +32,12 @@ const WhyChooseListy = () => {
           </p>
           <Link
             href='#'
-            className='flex flex-row items-center gap-x-2 rounded-xl text-left text-base font-inter font-normal leading-normal transition-all hover:text-lightBlue'
+            className='flex flex-row items-center gap-x-2 rounded-xl text-left text-base font-inter font-normal leading-normal transition-all hover:text-lightBlue m-auto md:ml-0'
           >
             Learn More
             <LuArrowRight className='text-lg font-semibold'/>
             </Link>
-          <CustomButton className='btn_secondary'>
+          <CustomButton className='btn_secondary m-auto md:ml-0'>
             Start a Free Trial
           </CustomButton>
         </div>
